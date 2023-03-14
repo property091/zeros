@@ -1,0 +1,129 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    background-color: rgb(130, 173, 117);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.win {
+    border-radius: 10%;
+
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+
+    margin-left: 15px;
+    margin-top: 50px;
+
+    width: 180px;
+    height: 150px;
+
+    background-color: rgb(110, 34, 34);
+    visibility: hidden; 
+}
+
+.rest {
+    position: relative;
+
+
+    color:aliceblue;
+    font-size: 10px;
+    font-family: monospace;
+    text-decoration: none;
+}
+.who {
+    font-size: 70px;
+    font-family: monospace;
+    color: aliceblue;
+}
+
+.who1 {
+    visibility: hidden;
+}
+
+.win1 {
+    border-radius: 10%;
+
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+
+    margin-left: 15px;
+    margin-top: 50px;
+
+    width: 180px;
+    height: 150px;
+
+    background-color: rgb(153, 58, 58);
+    visibility: visible;
+}
+
+.win h1,
+.win1 h1 {
+    font-family: monospace;
+    font-size: 30px;
+    color: rgb(58, 9, 9);
+}
+
+.text {
+    position: flex;
+    left: 255px;
+    top: 70px;
+}
+
+.text h1 {
+    position: flex;
+    font-family: monospace;
+    color: rgb(86, 112, 86);
+    
+    font-size: 23px;
+}
+
+.content {
+
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+
+#area {
+    width: 250px;
+    font-size: 0;
+}
+
+.square {
+    
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+
+    background-color: rgb(82, 134, 109);
+    color: aliceblue;
+
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    
+    border: 5px solid rgb(54, 97, 94);
+    vertical-align: middle;
+}
+
+.square:hover {
+    background-color: rgb(93, 131, 95);
+}
