@@ -34,7 +34,7 @@ function click() {
     }
     else {
         document.getElementById('alredy').innerText = "Клетка занята!"
-        document.getElementById('alredy').style.color = `rgb(${getRnd(100) + "," + getRnd(100) + "," + getRnd(100)})`
+        document.getElementById('alredy').style.color = `rgb(${getRnd(256) + "," + getRnd(256) + "," + getRnd(256)})`
         var x = `rgb(${getRnd(200) + "," + getRnd(200) + "," + getRnd(200)})`
         console.log(x)
         /* console.log("клетка занята"); */
@@ -65,6 +65,7 @@ function click() {
     || (square[2].innerText == square[4].innerText && square[4].innerText == square[6].innerText && square[2].innerText == "X"))
     {   
         X += 1
+        document.getElementById('text_winner').innerText = 'WINNER!'
         console.log(document.getElementById('who'))
         document.getElementById('who').innerText = 'X'
 
@@ -88,6 +89,7 @@ function click() {
     || (square[2].innerText == square[4].innerText && square[4].innerText == square[6].innerText && square[2].innerText == "0")) 
     {   
         O += 1
+        document.getElementById('text_winner').innerText = 'WINNER!'
         document.getElementById('who').innerText = "0"
         document.getElementById('winner').style.visibility = 'visible'
         document.getElementById('0').innerText = "0: " + O
